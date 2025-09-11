@@ -26,11 +26,11 @@ author:
   avatar           : "profile.png"
   name             : "황귀환"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "백엔드 개발자, 안정적인 서버와 효율적인 코드에 집중합니다."
   location         : "서울 양천구"
   employer         : "한성대학교"
   uri              : # URL
-  email            : "hkh001107@gmail.com" 
+  email            : hkh001107@gmail.com 
 
 
 
