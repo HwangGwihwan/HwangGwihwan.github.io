@@ -11,6 +11,8 @@ collection: portfolio
 
 ---
 
+🔗 [🔍 방과 후 LMS 사이트 바로가기](http://3.36.133.135/)
+
 ## 🧩 프로젝트 개요
 
 - **개발 목적**: 다양한 사용자의 입장에서 방과후 수업의 전 과정을 웹으로 통합 관리
@@ -46,6 +48,11 @@ collection: portfolio
 
 ---
 
+## 🧑‍💼 담당 역할  
+- 🧑‍🎓 학생  
+- 🚐 차량 기사  
+
+---
 
 ## 👥 사용자 역할 및 기능
 
@@ -88,7 +95,7 @@ collection: portfolio
 - 사용자(`user`), 역할(`role`), 강의(`lecture`), 교보재(`material`), 차량(`vehicle`), 출결(`attendance`), 앨범(`album`) 등 총 25개 이상 테이블 설계
 - 수강 신청, 납부, 환불, 배차 등의 흐름이 정교하게 반영됨
 
-👉 ERD: [`04_ERD_A팀.png`](/files/ERD.png)(첨부 이미지 참조)
+👉 ERD: [`ERD.png`](/files/ERD.png)(첨부 이미지 참조)
 
 ---
 
@@ -96,7 +103,7 @@ collection: portfolio
 
 - 총 90페이지 이상의 화면설계 포함
 - 역할별로 메뉴/기능이 다르게 제공되며, 사용성 흐름도에 따라 설계됨
-- 화면설계서 PDF 참고: [`05_화면설계서_A팀.pdf`](/files/05_화면설계서_A팀.pdf)(첨부 문서 참조)
+- 화면설계서 PDF 참고: [`화면설계서.pdf`](/files/05_화면설계서_A팀.pdf)(첨부 문서 참조)
 
 ---
 
@@ -104,7 +111,6 @@ collection: portfolio
 
 > 관리자/강사/학생/학부모/차량 기사 역할별 기능 및 CRUD 흐름을 도식화한 흐름도 참고
 
-📌 [`방과후수업관리_기능흐름도.png`](/files/FLOW.png)(첨부 이미지 참조)
+📌 [`기능흐름도.png`](/files/FLOW.png)(첨부 이미지 참조)
 
----
 

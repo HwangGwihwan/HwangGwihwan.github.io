@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "황귀환/Portfolio"
+title                    : "황귀환/PORTFOLIO"
 title_separator          : "-"
 name                     : "황귀환"
 description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
