@@ -1,17 +1,18 @@
 ---
 layout: archive
-title: "CV"
+title: "이력서"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
+
 {% include base_path %}
 
-Education
+학력
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* 한성대학교 컴퓨터공학부 (2019.03 ~ 2025.02)
 * M.S. in Jekyll, GitHub University, 2014
 * B.S. in GitHub, GitHub University, 2012
 
