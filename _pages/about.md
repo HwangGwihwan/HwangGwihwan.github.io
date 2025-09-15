@@ -1,56 +1,97 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "함께 달리고 싶은 열정 지원자, 황귀환입니다."
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+<style>
+.skills {
+  display: flex;
+  flex-wrap: wrap;   /* 여러 줄로 자동 줄바꿈 */
+  gap: 10px;         /* 태그 간격 */
+}
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+.skill-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;     /* pill 모양 */
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
 
-ㅇㅇ
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.3rem;
+}
+</style>
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+<h2>나의 스킬</h2>
+<div class="skills">
+  <span class="skill-tag">Java</span>
+  <span class="skill-tag">Spring Boot</span>
+  <span class="skill-tag">JSP</span>
+  <span class="skill-tag">AJAX</span>
+  <span class="skill-tag">JavaScript</span>
+  <span class="skill-tag">MyBatis</span>
+  <span class="skill-tag">MySQL</span>
+  <span class="skill-tag">AWS</span>
+  <span class="skill-tag">C</span>
+  <span class="skill-tag">Kotlin</span>
+  <span class="skill-tag">Swift</span>
+</div>
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+<h2>문제 해결 사례</h2>
+⚠️ 문제 상황 (Problem)
+ - 학생이 URL을 직접 입력하여 다른 사용자/관리자 페이지 접근 가능
+ - 권한 검증 미비로 보안 취약점 발생
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+🛠️ 해결 방법 (Solution)
+ - 사용자 역할(Role) 기반 접근 제한 필터 적용
+ - 각 사용자에게 허용된 페이지/기능만 접근 가능하도록 제한
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+✅ 결과 (Result)
+ - 불법 접근 차단
+ - 서비스 보안 강화 및 안정성 확보
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+---
 
-**Markdown generator**
+ ⚠️ 문제 상황 (Problem)
+ - 팀원의 주문 기능과 본인의 상품/장바구니 기능을 연동해야 했음
+ - 원래는 DTO를 통해 결제 페이지로 데이터 전달 필요
+ - 그러나 팀원의 주문 Controller가 DB에서 직접 값을 조회하도록 구현되어 구조 변경이 어려운 상황 발생
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+🛠️ 해결 방법 (Solution)
+ - 상품 구매 시 주문 테이블에 데이터를 삽입하되 use_status를 **‘N’**으로 설정해 결제 전에는 구매 내역에 표시되지 않도록 처리
+ - 결제가 완료되면 use_status를 **‘Y’**로 변경해 구매 내역에 반영되도록 구현
+ - 기존 주문 Controller 코드를 수정하지 않고도 연동 가능하도록 설계
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+✅ 결과 (Result)
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+ - 팀원 코드 수정 없이 협업 효율성 유지
+ - 구매 데이터 흐름의 일관성과 보안성 확보
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+---
+
+⚠️ 문제 상황 (Problem)
+ - 장바구니 기능에서 재고 변동으로 인한 수량 불일치 발생
+ - 사용자가 담아둔 수량보다 실제 재고가 줄어든 경우 오류 및 결제 실패 위험 존재
+
+🛠️ 해결 방법 (Solution)
+ - 장바구니 진입 시 재고를 실시간 확인, 부족한 수량은 자동으로 조정
+ - 결제 직전에도 재고 재검증을 수행해 부족할 경우 결제 차단
+ - 변동 상황에서도 오류 없이 서비스가 동작하도록 설계
+
+✅ 결과 (Result)
+ - 사용자의 불편 최소화 (재고 부족 시 자동 처리)
+ - 결제 오류 방지 및 서비스 안정성 확보
+ - 서비스 신뢰성 향상
+
