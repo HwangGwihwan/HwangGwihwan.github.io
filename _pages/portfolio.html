@@ -5,10 +5,72 @@ permalink: /portfolio/
 author_profile: true
 ---
 
+<style>
+.portfolio-grid.featured {
+  display: grid;
+  grid-template-columns: repeat(2, 280px);
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.portfolio-grid.others {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 280px)); /* 화면 크기에 맞춰 열 개수 자동 조정 */
+  gap: 15px; /* 카드 사이 간격 */
+}
+
+.portfolio-grid .archive__item {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 25px 15px 15px; /* 위쪽 여백 확보 */
+  background: #fff;
+  transition: 0.3s ease;
+  height: 240px;
+  width: 280px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.portfolio-grid .archive__item img {
+  max-width: 90%;
+  max-height: 120px;
+  margin-bottom: 8px; /* 제목과 이미지 사이 간격 */
+  margin-top: 5px; /* 카드 상단과 이미지 사이 */
+}
+
+.portfolio-grid .archive__item-title {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #2ca7c9;
+  font-weight: bold;
+}
+</style>
+
+
 {% include base_path %}
 
+<h2>대표 포트폴리오</h2>
+<div class="portfolio-grid featured">
+  {% for post in site.portfolio %}
+    {% if post.featured %}
+      {% include archive-single.html %}
+    {% endif %}
+  {% endfor %}
+</div>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+<hr/>
 
+<h2>그 외 포트폴리오</h2>
+<div class="portfolio-grid others">
+  {% for post in site.portfolio %}
+    {% unless post.featured %}
+      {% include archive-single.html %}
+    {% endunless %}
+  {% endfor %}
+</div>
