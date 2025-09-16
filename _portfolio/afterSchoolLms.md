@@ -15,6 +15,17 @@ collection: portfolio
 
 🔗 [🔍 방과 후 LMS 사이트 바로가기](http://3.36.133.135/)
 
+테스트 계정
+<pre>
+관리자	: admin                  	1234
+학생	: student001~student150  	1234
+학부모	: dad001~dad150          	1234
+	: mom001~mom150          	1234
+강사	: teacher001~teacher006  	1234
+운전기사	: driver001~driver006   	1234
+</pre>
+
+
 ## 🧩 프로젝트 개요
 
 - **개발 목적**: 다양한 사용자의 입장에서 방과후 수업의 전 과정을 웹으로 통합 관리
