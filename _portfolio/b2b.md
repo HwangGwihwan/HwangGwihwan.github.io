@@ -41,7 +41,7 @@ collection: portfolio
 | 항목 | 사용 기술 |
 |------|-----------|
 | Frontend | HTML5, CSS3, JavaScript, jQuery, Bootstrap |
-| Backend | Java 17, Spring Framework, Servlets & JSP, AJAX |
+| Backend | Java 21, Spring Framework, Servlets & JSP, AJAX |
 | DBMS | MySQL |
 | ORM | Mybatis |
 | Server | Apache Tomcat, Jenkins |
