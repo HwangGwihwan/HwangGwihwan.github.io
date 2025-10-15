@@ -47,7 +47,7 @@ collection: portfolio
 | ORM | MyBatis |
 | API | Kakao API (주소, 페이), 공휴일 API, 네이버 & 카카오 소셜 로그인 API |
 | Email | JavaMail (Gmail SMTP) |
-| Server | Apache Tomcat |
+| Server | Embedded Tomcat |
 | 개발 환경 | Eclipse |
 
 ---
