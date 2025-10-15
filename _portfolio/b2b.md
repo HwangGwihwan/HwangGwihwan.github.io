@@ -40,14 +40,14 @@ collection: portfolio
 
 | 항목 | 사용 기술 |
 |------|-----------|
-| Frontend | HTML5, CSS3, JavaScript, jQuery, Bootstrap |
-| Backend | Java 21, Spring Framework, Servlets & JSP, AJAX |
+| Language | Java 21 |
+| Frontend | HTML5, CSS3, JavaScript, jQuery, Bootstrap, AJAX |
+| Backend | Spring Boot |
 | DBMS | MySQL |
-| ORM | Mybatis |
-| Server | Apache Tomcat, Jenkins |
+| ORM | MyBatis |
 | API | Kakao API (주소, 페이), 공휴일 API, 네이버 & 카카오 소셜 로그인 API |
 | Email | JavaMail (Gmail SMTP) |
-| Server | Apache Tomcat, Jenkins |
+| Server | Apache Tomcat |
 | 개발 환경 | Eclipse |
 
 ---
