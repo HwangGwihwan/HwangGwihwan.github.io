@@ -48,7 +48,7 @@ collection: portfolio
 | Backend | Spring Boot |
 | Frontend (View) | JSP, JSTL, EL, jQuery |
 | DBMS | MySQL |
-| ORM | Mybatis |
+| ORM | MyBatis |
 | Build Tool | Maven |
 | Server | Embedded Tomcat |
 | 기타 | Lombok 등 |
