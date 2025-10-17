@@ -15,7 +15,7 @@ collection: portfolio
 
 🔗 [🔍 깃허브](https://github.com/freestyle-y/final_project_b2b)
 <br>
-🔗 [🔍 B2B 무역 구매·배송 서비스 사이트 바로가기](http://54.180.131.68:9000/)
+🔗 [🔍 B2B 무역 구매·배송 서비스 사이트 바로가기](http://3.36.73.47:9000/)
 
 테스트 계정
 <pre>
