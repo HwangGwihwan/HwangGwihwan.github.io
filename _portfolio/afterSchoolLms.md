@@ -15,7 +15,7 @@ collection: portfolio
 
 🔗 [🔍 깃허브](https://github.com/func5/afterSchoolLms)
 <br>
-🔗 [🔍 방과 후 LMS 사이트 바로가기](http://54.180.131.68/)
+🔗 [🔍 방과 후 LMS 사이트 바로가기](http://3.36.73.47/)
 
 테스트 계정
 <pre>
